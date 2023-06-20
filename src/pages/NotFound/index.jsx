@@ -1,13 +1,13 @@
 import './App.css'
 
-function App() {
+function NotFound() {
   return (
     <>
       <div className="bg-red-100">
-        My e-commerce 
+        Not found      
       </div>
     </>
   )
 }
 
-export default App
+export default NotFound
