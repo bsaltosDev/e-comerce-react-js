@@ -4,7 +4,7 @@ function MyOrder() {
   return (
     <>
       <div className="bg-red-100">
-        My e-commerce 
+        My order
       </div>
     </>
   )
