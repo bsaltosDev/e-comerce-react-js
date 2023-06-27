@@ -9,6 +9,7 @@ import SignIn from '../SignIn'
 import Navbar from '../../Components/Navbar'
 
 import { useRoutes, BrowserRouter } from 'react-router-dom'
+import { ShoppingCarProvider } from '../../Context'
 
 const AppRoutes = () =>{
   let routes = useRoutes([
@@ -26,10 +27,13 @@ const AppRoutes = () =>{
 const App= () =>  {
 
   return (
-    <BrowserRouter>
-      <AppRoutes />
-      <Navbar />
-    </BrowserRouter>
+    <ShoppingCarProvider>
+      <BrowserRouter>
+        <AppRoutes />
+        <Navbar />
+      </BrowserRouter>  
+    </ShoppingCarProvider>
+
   )
 }
 
